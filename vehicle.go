@@ -48,9 +48,10 @@ const (
 	extraNegative rating = -1.2
 )
 
-var inventory []vehicle
-
-var vehicleResult = make(map[string]feedbackResult)
+var (
+	vehicleResult = make(map[string]feedbackResult)
+	inventory     []vehicle
+)
 
 func init() {
 
